@@ -1,0 +1,7 @@
+# Model for Allograft Survival
+
+**Official repository of the MLHC 2024 paper [Predicting Long-Term Allograft Survival in Liver Transplant Recipients](https://arxiv.org/abs/2408.05437).**
+
+## Introduction
+
+Providing an accurate and interpretable model for individualized risk estimation of graft failure is essential for improving post-transplant care. We introduce the **Model for Allograft Survival (MAS)**, a simple linear risk score that outperforms other advanced survival models. Using longitudinal patient follow-up data from the United States (U.S.), we develop our models on 82,959 liver transplant recipients and conduct multi-site evaluations on 11 regions. Additionally, by testing on a separate non-U.S. cohort, we explore the out-of-distribution generalization performance of various models without additional fine-tuning, a crucial property for clinical deployment. We find that the most complex models are also the ones most vulnerable to distribution shifts despite achieving the best in-distribution performance. Our findings not only provide a strong risk score for predicting long-term graft failure but also suggest that the routine machine learning pipeline with only in-distribution held-out validation could create harmful consequences for patients at deployment.
